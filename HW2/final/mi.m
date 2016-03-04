@@ -20,7 +20,6 @@ function [mutualInfo] = mi
        tempMatrix1 = zeros(10,1);
        tempMatrix2 = zeros(10,1);
 
-
        for j=1:9
            tempMatrix1(j,1)=size(intersect(classifier0,tempReshape(j,1:460)),1)/4601;
            tempMatrix2(j,1)=size(intersect(classifier1,tempReshape(j,1:460)),1)/4601;
